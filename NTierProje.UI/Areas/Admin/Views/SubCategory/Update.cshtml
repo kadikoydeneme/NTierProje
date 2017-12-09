@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Areas/Admin/Views/Shared/_SharedAdminLayout.cshtml";
+}
+@model NTierProje.UI.Areas.Admin.Models.SubCategoryVM
+
+<form action="/Admin/SubCategory/update" method="post">
+    <div class="form-group">
+        <label for="Name">Alt Kategori İsmi</label>
+        <input type="text" name="Name" value="@Model.Subcategory.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Name">Alt Kategori Açıklaması</label>
+        <input type="text" name="Description" value="@Model.Subcategory.Description" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="CategoryID">Kategori Seçiniz</label>
+        <select name="CategoryID" class="form-control">
+            @foreach (var item in Model.Categories)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
+    <input style="visibility:hidden" type="text" name="Id" value="@Model.Subcategory.Id" />
+    <input type="submit" name="name" value="Güncelle" class="form-control btn btn-primary" />
+</form>

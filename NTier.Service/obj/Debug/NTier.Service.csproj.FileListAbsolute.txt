@@ -1,0 +1,28 @@
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\obj\Debug\NTier.Service.csprojResolveAssemblyReference.cache
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\bin\Debug\NTier.Service.dll.config
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\bin\Debug\NTier.Service.dll
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\bin\Debug\NTier.Service.pdb
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\bin\Debug\EntityFramework.dll
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\bin\Debug\NTier.Core.dll
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\bin\Debug\NTier.Model.dll
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\bin\Debug\NTier.Core.pdb
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\bin\Debug\NTier.Model.pdb
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\bin\Debug\EntityFramework.xml
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\obj\Debug\NTier.Service.dll
+C:\Users\cn_og\Documents\Visual Studio 2015\Projects\NTierProje\NTier.Service\obj\Debug\NTier.Service.pdb
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\bin\Debug\NTier.Service.dll.config
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\bin\Debug\NTier.Service.dll
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\bin\Debug\NTier.Service.pdb
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\bin\Debug\EntityFramework.dll
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\bin\Debug\NTier.Core.dll
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\bin\Debug\NTier.Model.dll
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\bin\Debug\NTier.Core.pdb
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\bin\Debug\NTier.Model.pdb
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\bin\Debug\EntityFramework.xml
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\obj\Debug\NTier.Service.csprojResolveAssemblyReference.cache
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\obj\Debug\NTier.Service.dll
+C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.Service\obj\Debug\NTier.Service.pdb

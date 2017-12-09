@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Areas/Admin/Views/Shared/_SharedAdminLayout.cshtml";
+}
+@model List<NTier.Model.Entities.Orders>
+<div class="col-md-12">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Sipariş Kodu</th>
+                <th>Müşteri Adı</th>
+                <th>Müşteri Kullanıcı Adı</th>
+                <th colspan="2">Sipariş Detay</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.AppUser.Name</td>
+                    <td>@item.AppUser.UserName</td>
+                    <td>
+                        <a href="/Admin/Orders/Details/@item.Id">Detay</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

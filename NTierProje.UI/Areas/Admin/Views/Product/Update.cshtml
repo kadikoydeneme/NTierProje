@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Areas/Admin/Views/Shared/_SharedAdminLayout.cshtml";
+}
+@model NTierProje.UI.Areas.Admin.Models.ProductUpdateVM
+
+
+´<form action="/Admin/Product/Update" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Name">Ismi</label>
+        <input type="text" name="Name" value="@Model.Product.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Price">Fiyatı</label>
+        <input type="text" name="Price" value="@Model.Product.Price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="UnitsInStock">Stok Miktarı</label>
+        <input type="text" name="UnitsInStock" value="@Model.Product.UnitsInStock" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Quantity">Birimi</label>
+        <input type="text" name="Quantity" value="@Model.Product.Quantity" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="SubCategoryID">Kategori Seçiniz</label>
+        <select name="SubCategoryID" class="form-control">
+            @foreach (var item in Model.SubCategories)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Image">Fotoğraf</label>
+        <input type="file" name="Image" value="@Model.Product.ImagePath" />
+    </div>
+     <input style="visibility:hidden" type="text" name="ID" value="@Model.Product.Id" />
+    <input type="submit" name="name" value="Ekle" class="form-control btn btn-primary" />
+</form>
+
