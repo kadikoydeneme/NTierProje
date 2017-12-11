@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace NTier.Model.Entities
 {
+    //Role bazlı authentication için gerekli attributelar.
     [Serializable]
     [Flags]
     public enum Role

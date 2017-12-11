@@ -53,4 +53,4 @@ Referanslar = NTier.Core , NTier.Model , NTier.Service
 3)Api içerisindeki controller ile gelen verilere göre yönlendirme gerçekleştiriyoruz.(ID bu aşamada url üzerinden iletilecektir ve UI-HomeController içerisine FormsAuthentication eklenecektir. Web.Config içerisine authentication için gerekli bölümü eklemeyi unutmayın.)
 4)Logout için _Layout içerisine link ekliyoruz ve Api içerisindeki controller'a yönlendirme yapıyoruz.
 
-!!NOT: Bu servis token based authentication içermediği için tekrar yönlendirme yapmaktadır. FormsAuthentication iki domain arasında aynı seansı taşıyamamaktadır. Taşıması için veritabanında ayarlama yapmak gereklidir. Amaç öğrencilerin servisleri nasıl projeye entegre edebileceklerini göstermektir. 
+!!NOT: Bu servis token based authentication içermediği için tekrar yönlendirme yapmaktadır. FormsAuthentication iki domain arasında aynı seansı taşıyamamaktadır. Taşıması için veritabanında ayarlama yapmak gereklidir. Amaç öğrencilerin servisleri nasıl projeye entegre edebileceklerini göstermektir.

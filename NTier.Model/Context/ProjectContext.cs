@@ -20,7 +20,7 @@ namespace NTier.Model.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-
+            //Konfigurasyonlara hazırladığımız map sınıflarını ekliyoruz.
             modelBuilder.Configurations.Add(new AppUserMap());
             modelBuilder.Configurations.Add(new CategoryMap());
             modelBuilder.Configurations.Add(new ProductMap());
@@ -36,6 +36,9 @@ namespace NTier.Model.Context
         public DbSet<SubCategory> SubCategories { get; set; }
         public DbSet<Orders> Orders { get; set; }
         public DbSet<OrderDetails> OrderDetails { get; set; }
+
+        //Savechanges içerisinde ekleme ve güncelleme bilgilerinin otomatik girişini sağlıyoruz.
+
         public override int SaveChanges()
         {
 
@@ -70,38 +73,39 @@ namespace NTier.Model.Context
                     }
                 }
             }
-            //return base.SaveChanges();
-            try
-            {
-                return base.SaveChanges();
-            }
-            catch (DbUpdateException e)
-            {
+            return base.SaveChanges();
 
-                throw HandleDbUpdateException(e);
-            }
+            //try
+            //{
+            //    return base.SaveChanges();
+            //}
+            //catch (DbUpdateException e)
+            //{
+
+            //    throw HandleDbUpdateException(e);
+            //}
         }
 
 
-        private Exception HandleDbUpdateException(DbUpdateException dbu)
-        {
-            var builder = new StringBuilder("A DbUpdateException was caught while saving changes. ");
+        //private Exception HandleDbUpdateException(DbUpdateException dbu)
+        //{
+        //    var builder = new StringBuilder("A DbUpdateException was caught while saving changes. ");
 
-            try
-            {
-                foreach (var result in dbu.Entries)
-                {
-                    builder.AppendFormat("Type: {0} was part of the problem. ", result.Entity.GetType().Name);
-                }
-            }
-            catch (Exception e)
-            {
-                builder.Append("Error parsing DbUpdateException: " + e.ToString());
-            }
+        //    try
+        //    {
+        //        foreach (var result in dbu.Entries)
+        //        {
+        //            builder.AppendFormat("Type: {0} was part of the problem. ", result.Entity.GetType().Name);
+        //        }
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        builder.Append("Error parsing DbUpdateException: " + e.ToString());
+        //    }
 
-            string message = builder.ToString();
-            return new Exception(message, dbu);
-        }
+        //    string message = builder.ToString();
+        //    return new Exception(message, dbu);
+        //}
 
     }
 

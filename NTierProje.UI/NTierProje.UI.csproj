@@ -325,7 +325,7 @@
     <Compile Include="Areas\Member\MemberAreaRegistration.cs" />
     <Compile Include="Areas\Member\Models\ProductCart.cs" />
     <Compile Include="Areas\Member\Models\VM\ProductVM.cs" />
-    <Compile Include="Attributes\AllowAuthorizedAttribute.cs" />
+    <Compile Include="Attributes\CustomAuthorize.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">

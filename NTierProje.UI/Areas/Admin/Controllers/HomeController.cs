@@ -10,13 +10,15 @@ using System.Web.Security;
 
 namespace NTierProje.UI.Areas.Admin.Controllers
 {
-    [AllowAuthorized(Roles = Role.Admin)]
+    
+    [CustomAuthorize(Role.Admin)]
     public class HomeController : Controller
     {
-
+        
         OrderService _orderService;
         public HomeController()
         {
+             
             _orderService = new OrderService();
         }
 

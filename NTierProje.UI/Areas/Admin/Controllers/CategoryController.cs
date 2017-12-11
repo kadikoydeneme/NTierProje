@@ -9,7 +9,6 @@ using System.Web.Mvc;
 
 namespace NTierProje.UI.Areas.Admin.Controllers
 {
-    [AllowAuthorized(Roles = Role.Admin)]
     public class CategoryController : Controller
     {
         CategoryService _categoryService;

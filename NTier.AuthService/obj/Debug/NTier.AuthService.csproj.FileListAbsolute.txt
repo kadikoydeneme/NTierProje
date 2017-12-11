@@ -80,3 +80,44 @@ C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.AuthService\bin\System.Web.Htt
 C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.AuthService\obj\Debug\NTier.AuthService.csprojResolveAssemblyReference.cache
 C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.AuthService\obj\Debug\NTier.AuthService.dll
 C:\Users\cn_og\Desktop\temp test\NTierProje\NTier.AuthService\obj\Debug\NTier.AuthService.pdb
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\csc.exe
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\vbc.exe
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\VBCSCompiler.exe
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\NTier.AuthService.dll.config
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\NTier.AuthService.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\NTier.AuthService.pdb
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\EntityFramework.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\EntityFramework.SqlServer.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\Newtonsoft.Json.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\NTier.Core.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\NTier.Model.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\NTier.Service.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\System.Net.Http.Formatting.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\System.Web.Cors.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\System.Web.Http.Cors.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\System.Web.Http.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\System.Web.Http.WebHost.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\NTier.Core.pdb
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\NTier.Model.pdb
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\NTier.Service.pdb
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\EntityFramework.xml
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\EntityFramework.SqlServer.xml
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\System.Web.Http.Cors.xml
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\Newtonsoft.Json.xml
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\System.Net.Http.Formatting.xml
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\System.Web.Http.xml
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\bin\System.Web.Http.WebHost.xml
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\obj\Debug\NTier.AuthService.csprojResolveAssemblyReference.cache
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\obj\Debug\NTier.AuthService.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.AuthService\obj\Debug\NTier.AuthService.pdb

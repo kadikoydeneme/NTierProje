@@ -12,7 +12,6 @@ namespace NTier.Model.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public int? Tag { get; set; }
-
         public Guid CategoryID { get; set; }
         public virtual Category Category { get; set; }
 
