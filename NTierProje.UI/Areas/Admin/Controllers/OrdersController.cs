@@ -39,15 +39,12 @@ namespace NTierProje.UI.Areas.Admin.Controllers
             return Json(count,JsonRequestBehavior.AllowGet);
         }
 
-        
         public ActionResult Details(Guid Id)
         {
             List<OrderDetails> model = _orderDetailsService.GetDefault(x => x.Orders.Id == Id);
 
             return View(model);
         }
-
-        
 
         public RedirectResult ConfirmOrder(Guid Id)
         {
@@ -57,7 +54,6 @@ namespace NTierProje.UI.Areas.Admin.Controllers
             order.Confirmed = true;
             _orderService.Update(order);
             return Redirect("~/Admin/Orders/List");
-            
         }
         public RedirectResult RejectOrder(Guid Id)
         {

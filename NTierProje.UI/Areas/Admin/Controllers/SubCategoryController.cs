@@ -49,7 +49,6 @@ namespace NTierProje.UI.Areas.Admin.Controllers
             model.Categories = _categoryService.GetActive();
 
             return View(model);
-
         }
         [HttpPost]
         public ActionResult Update(SubCategory data)
