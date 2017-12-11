@@ -37,6 +37,7 @@
             }, 500)
 
             $.Cart = {
+                //Append işlemi sırasında ` ` işaretleri arasına kodumuzu yazarak $ ile item'ları belirtmemiz gerekmekte, yoksa Guid tipinde olan id'ler fonksiyonun tetiklenmesini engelleyecektir.
                 List: function () {
                     $.getJSON("http://localhost:60267/Member/Cart/List", function (data) {
                         $("table tbody tr").remove();
@@ -44,11 +45,12 @@
                         var totalCount = 0;
                         if (count > 0) {
                             $.each(data, function (key, item) {
-                                $("table tbody").append(`<tr><td style='line-height:40px;'>"
-                                    ${item.ProductName} "</td><td style='line-height:40px;'>"
-                                    ${item.UnitPrice} "</td><td style='line-height:40px;'>"
-                                    ${item.UnitsInStock} "</td><td style='line-height:40px;'>" ${item.Quantity} "</td><td style='line-height:40px;'>"
-                                    ${item.Quantity * item.UnitPrice} "</td><td><img width='40' height='40' onclick='$.Cart.Increase(" ${item.Id} ") ' src='/Content/Images/Add.png' data-toggle='tooltip' data-placement='right' title='Arttır' /><img width='40' height='40' onclick=' $.Cart.Decrease(" ${item.Id} ") ' src='/Content/Images/Remove1.png' data-toggle='tooltip' data-placement='right' title='Azalt' /><img width='40' height='40' onclick='$.Cart.Remove(" ${item.Id} ") ' src='/Content/Images/Remove.png' data-toggle='tooltip' data-placement='right' title='Sil' /></td></tr>`)
+                                $("table tbody").append(`<tr><td style='line-height:40px;'>
+                                    ${item.ProductName} </td><td style='line-height:40px;'>
+                                    ${item.UnitPrice} </td><td style='line-height:40px;'>
+                                    ${item.UnitsInStock} </td><td style='line-height:40px;'>
+                                    ${item.Quantity} </td><td style='line-height:40px;'>
+                                    ${item.Quantity * item.UnitPrice} </td><td><img width='40' height='40' onclick='$.Cart.Increase(" ${item.Id} ") ' src='/Content/Images/Add.png' data-toggle='tooltip' data-placement='right' title='Arttır' /><img width='40' height='40' onclick=' $.Cart.Decrease(" ${item.Id} ") ' src='/Content/Images/Remove1.png' data-toggle='tooltip' data-placement='right' title='Azalt' /><img width='40' height='40' onclick='$.Cart.Remove(" ${item.Id} ") ' src='/Content/Images/Remove.png' data-toggle='tooltip' data-placement='right' title='Sil' /></td></tr>`)
                                 totalCount += (item.Quantity * item.UnitPrice);
                             });
                         }
@@ -97,7 +99,6 @@
             cursor: pointer !important;
         }
     </style>
-
 }
 
 

@@ -3,8 +3,8 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@*@model IEnumerable<NTier.Model.Entities.Product>*@
-@model NTierProje.UI.Models.VM.MainVM
+@model IEnumerable<NTier.Model.Entities.Product>
+
 
 
 <!-- ========================================== SECTION – HERO ========================================= -->
@@ -107,7 +107,7 @@
         <div class="tab-pane in active" id="all">
             <div class="product-slider">
                 <div class="owl-carousel home-owl-carousel custom-carousel owl-theme" data-item="4">
-                    @foreach (var item in Model.Products)
+                    @foreach (var item in Model)
                     {
                         <div class="item item-carousel">
                             <div class="products">

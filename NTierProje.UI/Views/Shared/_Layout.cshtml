@@ -197,10 +197,8 @@
             <div class="row">
                 <!-- ============================================== SIDEBAR ============================================== -->
                 <div class="col-xs-12 col-sm-12 col-md-3 sidebar">
-
                     <!-- ================================== TOP NAVIGATION ================================== -->
-                    @{ Html.RenderAction("CategoryList", "Home");}
-                    
+                    @{ Html.RenderAction("CategoryList", "Home", new { area = "" }); /*Eğer area null olarak belirtmezsek partial view area içerisinde çalışmayacaktır.*/}
                     <!-- /.side-menu -->
                     <!-- ================================== TOP NAVIGATION : END ================================== -->
                     <!-- ============================================== HOT DEALS ============================================== -->

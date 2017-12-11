@@ -1,6 +1,5 @@
 ﻿using NTier.Model.Entities;
 using NTier.Service.Option;
-using NTierProje.UI.Models.VM;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,28 +24,26 @@ namespace NTierProje.UI.Controllers
         
         public ActionResult Index(Guid? id)
         {
+            //ID API üzerinden gönderiliyor. Eğer boş ise authentication yapmıyoruz.
             if (id!=null)
             {
                 AppUser user = new AppUser();
                 user = _appUserService.GetById((Guid)id);
                 string cookie = user.Id.ToString();
                 FormsAuthentication.SetAuthCookie(cookie, true);
-
-                if (user.Role==Role.Admin)
-                    return Redirect("/Admin/Home/Index");
+                
+                if (user.Role==Role.Admin) return Redirect("/Admin/Home/Index");
                 
             }
-            MainVM model = new MainVM();
-            
-            IEnumerable<Product> productList = _productService.GetDefault(x => x.UnitsInStock > 0).OrderByDescending(x => x.CreatedDate).Take(8);
-            model.Products = productList;
-            IEnumerable<Category> catList = _categoryService.GetActive();
-            model.Categories = catList;
+
+
+            var model = _productService.GetDefault(x => x.UnitsInStock > 0).OrderByDescending(x => x.CreatedDate).Take(4);
+             
             return View(model);
 
 
         }
-
+        //Bu metot PartialView'i yönlendirmek için kullanılıyor. ChildActionOnly bu action'ın sadece bu durumlarda çağırılabileceğini belirtir.Opsiyoneldir... 
         [ChildActionOnly]
         public ActionResult CategoryList()
         {
@@ -59,6 +56,7 @@ namespace NTierProje.UI.Controllers
             return View();
         }
 
+        //Bu metot API üzerinden yönlendirilerek ulaşılmaktadır.
         public RedirectResult Logout()
         {
             FormsAuthentication.SignOut();

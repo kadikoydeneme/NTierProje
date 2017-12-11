@@ -333,7 +333,6 @@
     </Compile>
     <Compile Include="Helpers\ImageUploader.cs" />
     <Compile Include="Models\Cart.cs" />
-    <Compile Include="Models\VM\MainVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -367,6 +366,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Member\Views\Checkout\" />
     <Folder Include="Areas\Member\Views\Shared\" />
+    <Folder Include="Models\VM\" />
     <Folder Include="Uploads\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>

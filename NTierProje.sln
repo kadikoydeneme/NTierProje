@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTier.AuthService", "NTier.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTier.Service", "NTier.Service\NTier.Service.csproj", "{1CC3BD47-A560-47F2-8B3C-C3EBFE3E4B4A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55C009CE-1C08-415D-B073-4FA935D7C769}"
+	ProjectSection(SolutionItems) = preProject
+		NTier Adımlar.txt = NTier Adımlar.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
