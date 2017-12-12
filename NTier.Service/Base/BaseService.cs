@@ -32,17 +32,11 @@ namespace NTier.Service.Base
             }
         }
 
-        //Context Dispose
-        public void Dispose()
+        public void DetachEntity(T item)
         {
-            context.Dispose();
+            context.Entry<T>(item).State = System.Data.Entity.EntityState.Detached;
         }
-        public void Indispose()
-        {
-            context = new Model.Context.ProjectContext();
-        }
-
-
+        
         public void Add(T item)
         {
             context.Set<T>().Add(item);

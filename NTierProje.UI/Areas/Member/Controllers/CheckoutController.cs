@@ -25,19 +25,20 @@ namespace NTierProje.UI.Areas.Member.Controllers
       
         public ActionResult Add()
         {
-            Orders o = new Orders();
 
-            AppUser user = _appUserService.GetById(new Guid(HttpContext.User.Identity.Name));
+            Orders o = new Orders();
+            
+            AppUser user = _appUserService.FindByUsername(HttpContext.User.Identity.Name);
             o.AppUserID = user.Id;
             o.AppUser = user;
-            //o.AppUserID = new Guid("44fcbd8a-07d1-e711-b841-3cf862c31f76");
-            _appUserService.Dispose();
+            _appUserService.DetachEntity(user);
 
             ProductCart cart = Session["sepet"] as ProductCart;
             Product p = new Product();
             foreach (var item in cart.CartProductList)
             {
                 p = _productService.GetById(item.Id);
+                //Siparişteki ürün sayısını stoktan düşüyoruz.
                 p.UnitsInStock -= item.Quantity;
                 _productService.Update(p);
                 o.OrderDetails.Add(new OrderDetails
@@ -48,9 +49,12 @@ namespace NTierProje.UI.Areas.Member.Controllers
                 });
             }
 
-            _productService.Dispose();
+
+
+
+            _productService.DetachEntity(p);
             _orderService.Add(o);
-            _productService.Indispose();
+
 
             return Redirect("/Home/Index");
         }

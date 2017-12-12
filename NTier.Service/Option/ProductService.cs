@@ -4,7 +4,7 @@ using System;
 
 namespace NTier.Service.Option
 {
-    public class ProductService : BaseService<Product>, IDisposable
+    public class ProductService : BaseService<Product>
     {
 
        

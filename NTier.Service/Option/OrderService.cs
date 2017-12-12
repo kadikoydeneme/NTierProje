@@ -8,12 +8,8 @@ using System.Threading.Tasks;
 
 namespace NTier.Service.Option
 {
-    public class OrderService : BaseService<Orders>, IDisposable
+    public class OrderService : BaseService<Orders>
     {
-        public void Dispose()
-        {
-            context.Dispose();  
-            
-        }
+        
     }
 }

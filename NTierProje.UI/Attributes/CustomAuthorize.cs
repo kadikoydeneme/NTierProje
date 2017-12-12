@@ -26,7 +26,7 @@ namespace NTierProje.UI.Attributes
             bool authorized = false;
             
             AppUserService service = new AppUserService();
-            AppUser user = service.GetById(new Guid(HttpContext.Current.User.Identity.Name));
+            AppUser user = service.FindByUsername(HttpContext.Current.User.Identity.Name);
             string userRole = Enum.GetName(typeof(Role), user.Role);
 
 
