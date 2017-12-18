@@ -10,6 +10,7 @@ using System.Web.Mvc;
 
 namespace NTierProje.UI.Areas.Admin.Controllers
 {
+    [CustomAuthorize(Role.Admin)]
     public class SubCategoryController : Controller
     {
         SubCategoryService _subCategoryService;
@@ -49,12 +50,14 @@ namespace NTierProje.UI.Areas.Admin.Controllers
 
             return View(model);
         }
+
         [HttpPost]
         public ActionResult Update(SubCategory data)
         {
             _subCategoryService.Update(data);
             return Redirect("/Admin/SubCategory/List");
         }
+
         public RedirectResult Delete(Guid id)
         {
             _subCategoryService.Remove(id);

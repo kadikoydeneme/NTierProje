@@ -34,7 +34,7 @@ Referanslar = NTier.Core , NTier.Model , NTier.Service , EntityFramework(NuGet)
 !!NOT: HomeController içerisinde FormsAuthentication işlemleri API aşamasına bırakılmalıdır.
 3)ProductController ile Ürün listeleme metotlarımızı oluşturuyoruz.
 4)Sepete ekleme işlemleri için Cart sınıfını Models altına ekliyoruz.(Session örneğindeki sepet işlemlerinin aynısını ekliyoruz)
--Bazı sayfalarda bulunan "Regex'ler" anlatım için eklenmiştir.öğrenciler bu regular expression'ları internetten bulabilir ve projelerine ekleyebilirler. İşleri belli input alanlarında yazım kuralları atamaktır(Email içerisinde @ işareti olması, büyük/küçük harf kuralları vb...)
+-Bazı sayfalarda bulunan "Regex'ler" anlatım için eklenmiştir.öğrenciler bu regular expression'ları internetten bulabilir ve projelerine ekleyebilirler.Proje içerisinde işleri belli input alanlarında yazım kuralları atamaktır(Email içerisinde @ işareti olması, büyük/küçük harf kuralları vb...)
 
 --UI/Admin(AREA)--
 1)Proje içerisine Admin Area ekliyoruz. Route.Config içerisine area kodunu ekliyoruz.
@@ -53,4 +53,13 @@ Referanslar = NTier.Core , NTier.Model , NTier.Service
 3)Api içerisindeki controller ile gelen verilere göre yönlendirme gerçekleştiriyoruz.(ID bu aşamada url üzerinden iletilecektir ve UI-HomeController içerisine FormsAuthentication eklenecektir. Web.Config içerisine authentication için gerekli bölümü eklemeyi unutmayın.)
 4)Logout için _Layout içerisine link ekliyoruz ve Api içerisindeki controller'a yönlendirme yapıyoruz.
 
-!!NOT: Bu servis token based authentication içermediği için tekrar yönlendirme yapmaktadır. FormsAuthentication iki domain arasında aynı seansı taşıyamamaktadır. Taşıması için veritabanında ayarlama yapmak gereklidir. Amaç öğrencilerin servisleri nasıl projeye entegre edebileceklerini göstermektir.
+
+																--NOTLAR--
+
+--Web servis token based authentication içermediği için tekrar yönlendirme yapmaktadır. FormsAuthentication iki domain arasında aynı seansı taşıyamamaktadır. Taşıması için veritabanında ayarlama yapmak gereklidir. Amaç öğrencilerin servisleri nasıl projeye entegre edebileceklerini göstermektir.
+
+--[CustomAuthorize(Role.Admin)] ve [CustomAuthorize(Role.Member,Role.Admin)] Attributes klasörü içerisindeki CustomAuthorize sınıfında tanımlanmaktadır. Birden fazla rol bu sayede belirtilebiliyor.
+
+--ImageUploader sınıfı Helpers klasörü altında bulunmaktadır.İşi bir dosya gelmiş mi bunu kontrol etmek ve eğer gelmişse dosya adını guid ile değiştirmektir.Arkasından Uploads isimli klasöre kaydetmekte. 0-1-2 gibi durumların ne anlama geldiği sınıf içerisinde belirtilmektedir.
+
+--Sepet işlemleri MVC session içerisindeki kodlarla aynıdır.

@@ -17,7 +17,7 @@ namespace NTierProje.UI
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                namespaces: new[] {"NTierProje.UI.Controllers"}
+                namespaces: new[] {"NTierProje.UI.Controllers"} //Area kullanabilmek için bu tanımlamayı yapıyoruz.
             );
         }
     }

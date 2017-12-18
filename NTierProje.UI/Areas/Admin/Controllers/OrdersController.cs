@@ -10,6 +10,7 @@ using System.Web.Mvc;
 
 namespace NTierProje.UI.Areas.Admin.Controllers
 {
+    [CustomAuthorize(Role.Admin)]
     public class OrdersController : Controller
     {
         OrderService _orderService;

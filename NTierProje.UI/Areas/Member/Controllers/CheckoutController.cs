@@ -2,6 +2,7 @@
 using NTier.Service.Option;
 using NTierProje.UI.Areas.Member.Models;
 using NTierProje.UI.Areas.Member.Models.VM;
+using NTierProje.UI.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ using System.Web.Mvc;
 
 namespace NTierProje.UI.Areas.Member.Controllers
 {
+    [CustomAuthorize(Role.Member, Role.Admin)]
     public class CheckoutController : Controller
     {
         OrderService _orderService;

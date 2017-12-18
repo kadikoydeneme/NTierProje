@@ -8,7 +8,12 @@ namespace NTierProje.UI.Helpers
 {
     public class ImageUploader
     {
-
+        //Image işlemleri. ürün ve User imajları bu metot ile guid tipinde isimlendirilir. 
+        //Hata kodları =>
+        //0-Dosya boş
+        //1-Zaten bu isimde dosya bulunmakta.
+        //2-Dosya uzantısı belirtilenlere uymuyor.
+        //Bu durumlarda ekleme aşamasında "default" bir imaj kullanılıyor. Yoksa "Guid+dosya uzantısı" ile yeni bir isim oluşturulup return ediliyor.
         public static string UploadSingleImage(string serverPath, HttpPostedFileBase file)
         {
             if (file != null)

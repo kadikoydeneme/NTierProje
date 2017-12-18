@@ -10,6 +10,7 @@ using System.Web.Mvc;
 
 namespace NTierProje.UI.Areas.Admin.Controllers
 {
+    [CustomAuthorize(Role.Admin)]
     public class AppUserController : Controller
     {
 
@@ -58,6 +59,7 @@ namespace NTierProje.UI.Areas.Admin.Controllers
 
             if (data.ImagePath == "0" || data.ImagePath == "1" || data.ImagePath == "2")
             {
+                //Elimizdeki imajı güncelleme aşamasında kaybetmemek için bir kontrol daha uyguluyoruz.
                 AppUser updated = _appUserService.GetById(data.Id);
                 if (updated.ImagePath == null || updated.ImagePath == "~/Content/Images/TestPhoto.jpg")
                 {

@@ -9,8 +9,7 @@ namespace NTierProje.UI.Models
     public class Cart
     {
         private Dictionary<Guid, Product> _cart = null;
-
-        //Object reference not found hatası almamak için instance alıyoruz.
+        
         public Cart()
         {
             _cart = new Dictionary<Guid, Product>();
@@ -28,7 +27,7 @@ namespace NTierProje.UI.Models
 
         public void AddCart(Product item)
         {
-            //Eğer o id'ye ait bir item yoksa id ve itemi sözlük(Dictionary) içerisine değeri ile at.
+            //Eğer o id'ye ait bir item yoksa id ve itemi sözlük(Dictionary) içerisine değeri ile atıyoruz.
             if (!_cart.ContainsKey(item.Id))
             {
                 _cart.Add(item.Id, item);
@@ -53,7 +52,7 @@ namespace NTierProje.UI.Models
         {
             //Sepetten bir azaltma
             _cart[id].Quantity = (int.Parse(_cart[id].Quantity) - 1).ToString();
-            //Eğer sepette azaltırken başka o elemendan kalmadı ise tamamen sepetten sil.
+            //Eğer sepette azaltırken başka o elemandan kalmadı ise tamamen sepetten siliyoruz..
             if (int.Parse(_cart[id].Quantity) <= 0)
             {
                 _cart.Remove(id);

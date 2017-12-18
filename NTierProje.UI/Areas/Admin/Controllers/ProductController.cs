@@ -11,6 +11,7 @@ using System.Web.Mvc;
 
 namespace NTierProje.UI.Areas.Admin.Controllers
 {
+    [CustomAuthorize(Role.Admin)]
     public class ProductController : Controller
     {
         ProductService _productService;

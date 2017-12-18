@@ -1,5 +1,6 @@
 ﻿using NTier.Model.Entities;
 using NTier.Service.Option;
+using NTierProje.UI.Attributes;
 using NTierProje.UI.Helpers;
 using System;
 using System.Collections.Generic;

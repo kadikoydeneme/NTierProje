@@ -14,6 +14,7 @@ namespace NTier.Service.Base
 {
     public class BaseService<T> : ICoreService<T> where T : CoreEntity
     {
+        //Singleton context için bu şekilde tanımlıyoruz.
         private static ProjectContext _context;
         public ProjectContext context
         {
