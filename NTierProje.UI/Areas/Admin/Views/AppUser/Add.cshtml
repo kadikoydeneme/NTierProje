@@ -30,12 +30,21 @@
         <input type="file" name="Image" value="" />
     </div>
     <div class="form-group">
-        <label for="Address">Kullanıcı Adı</label>
+        <label for="UserName">Kullanıcı Adı</label>
         <input type="text" name="UserName" value="" class="form-control" />
     </div>
     <div class="form-group">
-        <label for="Address">Password</label>
+        <label for="Password">Password</label>
         <input type="text" name="Password" value="" class="form-control" />
     </div>
+     <div class="form-group">
+         <label for="Role">Rol</label>
+        <select name="Role">
+            @foreach (var item in Enum.GetNames(typeof(NTier.Model.Entities.Role)))
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+     </div>
     <input type="submit" name="name" value="Ekle" class="form-control btn btn-primary" />
 </form>

@@ -7,8 +7,6 @@ using System.Collections.Generic;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NTier.Service.Base
 {
@@ -33,11 +31,6 @@ namespace NTier.Service.Base
             }
         }
 
-        public void DetachEntity(T item)
-        {
-            context.Entry<T>(item).State = System.Data.Entity.EntityState.Detached;
-        }
-        
         public void Add(T item)
         {
             context.Set<T>().Add(item);
@@ -114,6 +107,11 @@ namespace NTier.Service.Base
             DbEntityEntry entry = context.Entry(updated);
             entry.CurrentValues.SetValues(item);
             Save();
+        }
+        //Singleton pattern tarafı ile ilgili cache sorununu engellemek adına DetachEntity metodunu yazmalıyız!
+        public void DetachEntity(T item)
+        {
+            context.Entry<T>(item).State = System.Data.Entity.EntityState.Detached;
         }
 
     }

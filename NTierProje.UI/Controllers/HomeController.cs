@@ -37,7 +37,7 @@ namespace NTierProje.UI.Controllers
             }
 
 
-            var model = _productService.GetDefault(x => x.UnitsInStock > 0).OrderByDescending(x => x.CreatedDate).Take(4);
+            var model = _productService.GetDefault(x => x.UnitsInStock > 0).OrderByDescending(x => x.CreatedDate).Take(16);
              
             return View(model);
 
@@ -48,6 +48,12 @@ namespace NTierProje.UI.Controllers
         public ActionResult CategoryList()
         {
             return PartialView("_CategoryList",_categoryService.GetActive());
+        }
+
+        [ChildActionOnly]
+        public ActionResult ProductList()
+        {
+            return PartialView("_ProductList", _productService.GetActive().OrderByDescending(x => x.CreatedDate).Take(9).ToList());
         }
 
 

@@ -50,7 +50,7 @@
                                     ${item.UnitPrice} </td><td style='line-height:40px;'>
                                     ${item.UnitsInStock} </td><td style='line-height:40px;'>
                                     ${item.Quantity} </td><td style='line-height:40px;'>
-                                    ${item.Quantity * item.UnitPrice} </td><td><img width='40' height='40' onclick='$.Cart.Increase(" ${item.Id} ") ' src='/Content/Images/Add.png' data-toggle='tooltip' data-placement='right' title='Arttır' /><img width='40' height='40' onclick=' $.Cart.Decrease(" ${item.Id} ") ' src='/Content/Images/Remove1.png' data-toggle='tooltip' data-placement='right' title='Azalt' /><img width='40' height='40' onclick='$.Cart.Remove(" ${item.Id} ") ' src='/Content/Images/Remove.png' data-toggle='tooltip' data-placement='right' title='Sil' /></td></tr>`)
+                                    ${item.Quantity * item.UnitPrice} </td><td><img width='40' height='40' onclick='$.Cart.Increase(" ${item.Id} ") ' src='/Content/Images/plusNew.png' data-toggle='tooltip' data-placement='right' title='Arttır' /><img width='40' height='40' onclick=' $.Cart.Decrease(" ${item.Id} ") ' src='/Content/Images/minusNew.png' data-toggle='tooltip' data-placement='right' title='Azalt' /><img width='40' height='40' onclick='$.Cart.Remove(" ${item.Id} ") ' src='/Content/Images/removeNew.png' data-toggle='tooltip' data-placement='right' title='Sil' /></td></tr>`)
                                 totalCount += (item.Quantity * item.UnitPrice);
                             });
                         }

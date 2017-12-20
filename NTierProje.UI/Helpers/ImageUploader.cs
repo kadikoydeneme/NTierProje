@@ -34,7 +34,6 @@ namespace NTierProje.UI.Helpers
                     else
                     {
                         var filePath = HttpContext.Current.Server.MapPath(serverPath + fileName);
-
                         file.SaveAs(filePath);
                         return serverPath + fileName;
                     }
@@ -43,10 +42,8 @@ namespace NTierProje.UI.Helpers
                 {
                     return "2";
                 }
-
             }
             return "0";
         }
-
     }
 }

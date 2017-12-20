@@ -6,6 +6,7 @@ namespace NTier.Core.Map
 {
     public class CoreMap<T> : EntityTypeConfiguration<T> where T : CoreEntity
     {
+        //Core propertyler maplenir.
         public CoreMap()
         {
             Property(x => x.Id).HasColumnName("Id")

@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 
 namespace NTier.Core.Service
 {
+    //Temel metotlarımızı tanımlıyoruz.
     public interface ICoreService<T> where T:Entity.CoreEntity
     {
         void Add(T item);

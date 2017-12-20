@@ -370,6 +370,7 @@
     <Content Include="Content\Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_CategoryList.cshtml" />
+    <Content Include="Views\Shared\_ProductList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

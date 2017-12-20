@@ -10,7 +10,7 @@ namespace NTierProje.UI.Attributes
 {
     //Auth işlemlerinin Enum ile gerçekleşebilmesi için bu sınıfı kullanıyoruz.
 
-    [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class, Inherited = true, AllowMultiple = true)]//Allow Multiple ile birden fazla rol controllerlar üzerinde yetki sahibi olabiliyor.
+    [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class, Inherited = true, AllowMultiple = true)]//Allow Multiple ile birden fazla rol giriş olabiliyor.
     public class CustomAuthorize: AuthorizeAttribute
     {
         //String dizi rolleri tutmak için.

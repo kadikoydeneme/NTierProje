@@ -41,6 +41,7 @@ namespace NTierProje.UI.Areas.Admin.Controllers
             if (data.ImagePath == "0" || data.ImagePath == "1" || data.ImagePath == "2")
                 data.ImagePath = "~/Content/Images/TestPhoto.jpg";
 
+            
             _appUserService.Add(data);
             return View();
         }

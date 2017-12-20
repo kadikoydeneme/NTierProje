@@ -13,6 +13,8 @@
     <table class="table table-hover">
         <thead>
             <tr>
+                <th>Ürün Fotoğraf</th>
+                <th>Ürün Adı</th>
                 <th>Ürün Birim Fiyatı</th>
                 <th>Ürün Miktarı</th>
                 <th colspan="2">Onayla / Reddet</th>
@@ -22,6 +24,8 @@
             @foreach (var item in Model)
             {
                 <tr>
+                    <td><img src="@item.Product.ImagePath" style="display:block;" width="30" height="30" /></td>
+                    <td>@item.Product.Name</td>
                     <td>@item.UnitPrice</td>
                     <td>@item.Quantity</td>
                     <td>
