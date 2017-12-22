@@ -26,3 +26,4 @@ C:\Users\cn_og\Desktop\Git\NTierProje\NTier.Core\bin\Debug\EntityFramework.xml
 C:\Users\cn_og\Desktop\Git\NTierProje\NTier.Core\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\cn_og\Desktop\Git\NTierProje\NTier.Core\obj\Debug\NTier.Core.dll
 C:\Users\cn_og\Desktop\Git\NTierProje\NTier.Core\obj\Debug\NTier.Core.pdb
+C:\Users\cn_og\Desktop\Git\NTierProje\NTier.Core\obj\Debug\NTier.Core.csprojResolveAssemblyReference.cache

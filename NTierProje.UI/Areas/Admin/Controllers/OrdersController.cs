@@ -2,6 +2,7 @@
 using NTier.Service.Option;
 using NTierProje.UI.Areas.Admin.Models;
 using NTierProje.UI.Attributes;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,17 +25,17 @@ namespace NTierProje.UI.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public ActionResult List()
+        public ActionResult List(int page=1)
         {
             //Daha onaylanmamış tüm siparişleri listele
-            List<Orders> model = _orderService.GetDefault(x=>x.Confirmed==false);
-            return View(model);
+            List<Orders> model = _orderService.ListPendingOrders();
+            return View(model.ToPagedList(page,10));
         }
 
         //Onaylanmamış sipariş sayısını ana sayfada listeler
         public JsonResult OrderCount()
         {
-            int count = _orderService.GetDefault(x => x.Confirmed == false).Count();
+            int count = _orderService.PendingOrderCount();
 
             return Json(count,JsonRequestBehavior.AllowGet);
         }
@@ -63,6 +64,7 @@ namespace NTierProje.UI.Areas.Admin.Controllers
             {
                 Product p = _productService.GetById(item.Product.Id);
                 p.UnitsInStock += Convert.ToInt16(item.Product.Quantity);
+                p.Status = NTier.Core.Entity.Enum.Status.Deleted;
                 _productService.Update(p);
             }
             

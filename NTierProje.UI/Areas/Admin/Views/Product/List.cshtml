@@ -3,7 +3,10 @@
     ViewBag.Title = "List";
     Layout = "~/Areas/Admin/Views/Shared/_SharedAdminLayout.cshtml";
 }
-@model List<NTier.Model.Entities.Product>
+
+@using PagedList;
+@using PagedList.Mvc
+@model IPagedList<NTier.Model.Entities.Product>
 
 <div class="col-md-12">
     <table class="table table-hover">
@@ -37,4 +40,7 @@
             }
         </tbody>
     </table>
+    <div class="pagedList">
+        @Html.PagedListPager(Model, page => Url.Action("List", "Product", new { page }), PagedListRenderOptions.Classic)
+    </div>
 </div>

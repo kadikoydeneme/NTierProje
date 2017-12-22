@@ -2,6 +2,7 @@
 using NTier.Service.Option;
 using NTierProje.UI.Attributes;
 using NTierProje.UI.Helpers;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +22,10 @@ namespace NTierProje.UI.Areas.Admin.Controllers
             _appUserService = new AppUserService();
         }
 
-        public ActionResult List()
+        public ActionResult List(int page=1)
         {
             List<AppUser> model = _appUserService.GetActive();
-            return View(model);
+            return View(model.ToPagedList(page,10));
         }
 
 

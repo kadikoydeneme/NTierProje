@@ -3,6 +3,7 @@ using NTier.Service.Option;
 using NTierProje.UI.Areas.Admin.Models;
 using NTierProje.UI.Attributes;
 using NTierProje.UI.Helpers;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,10 +23,10 @@ namespace NTierProje.UI.Areas.Admin.Controllers
             _productService = new ProductService();
         }
 
-        public ActionResult List()
+        public ActionResult List(int page=1)
         {
-            List<Product> model = _productService.GetActive();
-            return View(model);
+            List<Product> model = _productService.GetActive().OrderByDescending(x=>x.CreatedDate).ToList();
+            return View(model.ToPagedList(page,10));
         }
 
         [HttpGet]

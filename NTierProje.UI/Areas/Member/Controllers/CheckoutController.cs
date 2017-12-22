@@ -28,6 +28,13 @@ namespace NTierProje.UI.Areas.Member.Controllers
         public ActionResult Add()
         {
 
+            if (Session["sepet"]==null)
+            {
+                return Redirect("~/Home/Index");
+            }
+
+            ProductCart cart = Session["sepet"] as ProductCart;
+
             Orders o = new Orders();
             
             AppUser user = _appUserService.FindByUsername(HttpContext.User.Identity.Name);
@@ -35,7 +42,7 @@ namespace NTierProje.UI.Areas.Member.Controllers
             o.AppUser = user;
             _appUserService.DetachEntity(user);
 
-            ProductCart cart = Session["sepet"] as ProductCart;
+            
             Product p = new Product();
             foreach (var item in cart.CartProductList)
             {
@@ -50,9 +57,6 @@ namespace NTierProje.UI.Areas.Member.Controllers
                     UnitPrice = item.UnitPrice
                 });
             }
-
-
-
 
             _productService.DetachEntity(p);
             _orderService.Add(o);

@@ -151,3 +151,7 @@ C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\System.Web.Mvc.xml
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\obj\Debug\NTierProje.UI.csprojResolveAssemblyReference.cache
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\obj\Debug\NTierProje.UI.dll
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\obj\Debug\NTierProje.UI.pdb
+C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.Mvc.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.xml
+C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.Mvc.xml

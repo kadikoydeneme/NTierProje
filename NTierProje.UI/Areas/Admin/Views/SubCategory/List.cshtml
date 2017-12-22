@@ -11,6 +11,7 @@
             <tr>
                 <th>Alt Kategori İsmi</th>
                 <th>Alt Kategori Açıklaması</th>
+                <th>Ait Olduğu Kategori</th>
                 <th colspan="2">Güncelle / Sil</th>
             </tr>
         </thead>
@@ -20,6 +21,7 @@
                 <tr>
                     <td>@item.Name</td>
                     <td>@item.Description</td>
+                    <td>@item.Category.Name</td>
                     <td>
                         <a href="/Admin/SubCategory/update/@item.Id">Güncelle</a>
                         /
