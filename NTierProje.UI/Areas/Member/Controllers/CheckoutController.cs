@@ -24,7 +24,6 @@ namespace NTierProje.UI.Areas.Member.Controllers
             _orderService = new OrderService();
         }
 
-      
         public ActionResult Add()
         {
 
@@ -42,7 +41,6 @@ namespace NTierProje.UI.Areas.Member.Controllers
             o.AppUser = user;
             _appUserService.DetachEntity(user);
 
-            
             Product p = new Product();
             foreach (var item in cart.CartProductList)
             {
@@ -56,11 +54,11 @@ namespace NTierProje.UI.Areas.Member.Controllers
                     Quantity = item.Quantity,
                     UnitPrice = item.UnitPrice
                 });
+                _productService.DetachEntity(p);
             }
 
             _productService.DetachEntity(p);
             _orderService.Add(o);
-
 
             return Redirect("/Home/Index");
         }

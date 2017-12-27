@@ -51,6 +51,7 @@
                 <div class="header-top-inner">
                     <div class="cnt-account">
                         <ul class="list-unstyled">
+
                             @if (string.IsNullOrEmpty(HttpContext.Current.User.Identity.Name))
                             {
                                 <li><a href="~/Home/login"><i class="icon fa fa-lock"></i>Login</a></li>
@@ -62,8 +63,6 @@
                                 <li><a href="~/Home/Logout"><i class="icon fa fa-lock"></i>Logout</a></li>
                             }
 
-
-                            
                         </ul>
                     </div>
                     <!-- /.cnt-account -->
@@ -103,7 +102,7 @@
                             <div class="" style="margin-top:50px;">
                                 <a href="/Member/Cart/Index">
                                     <div class="">
-                                        <img src="~/Content/Images/cartMain.png" width="40px;" height="40px;"/><p class="label">Siparişi Tamamla</p>
+                                        <img src="~/Content/Images/.png" width="40px;" height="40px;"/><p class="label">Siparişi Tamamla</p>
                                     </div>
                                 </a>
                             </div>

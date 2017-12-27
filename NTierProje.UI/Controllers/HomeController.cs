@@ -15,6 +15,7 @@ namespace NTierProje.UI.Controllers
         ProductService _productService;
         AppUserService _appUserService;
         CategoryService _categoryService;
+
         public HomeController()
         {
             _appUserService = new AppUserService();
@@ -36,13 +37,11 @@ namespace NTierProje.UI.Controllers
                 
             }
 
-
-            var model = _productService.GetDefault(x => x.UnitsInStock > 0).OrderByDescending(x => x.CreatedDate).Take(16);
+            var model = _productService.GetDefault(x => x.UnitsInStock > 0).OrderByDescending(x => x.CreatedDate).Take(16).ToList();
              
             return View(model);
-
-
         }
+
         //Bu metot PartialView'i yönlendirmek için kullanılıyor. ChildActionOnly bu action'ın sadece bu durumlarda çağırılabileceğini belirtir.Opsiyoneldir... 
         [ChildActionOnly]
         public ActionResult CategoryList()
@@ -55,7 +54,6 @@ namespace NTierProje.UI.Controllers
         {
             return PartialView("_ProductList", _productService.GetActive().OrderByDescending(x => x.CreatedDate).Take(9).ToList());
         }
-
 
         public ActionResult Login()
         {

@@ -123,6 +123,8 @@ C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\Newtonsoft.Json.dll
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\NTier.Core.dll
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\NTier.Model.dll
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\NTier.Service.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.dll
+C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.Mvc.dll
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\System.Net.Http.Formatting.dll
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\System.Web.Helpers.dll
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\System.Web.Http.Cors.dll
@@ -139,6 +141,8 @@ C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\EntityFramework.xml
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\EntityFramework.SqlServer.xml
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\Newtonsoft.Json.xml
+C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.xml
+C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.Mvc.xml
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\System.Net.Http.Formatting.xml
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\System.Web.Http.xml
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\System.Web.Http.Cors.xml
@@ -151,7 +155,3 @@ C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\System.Web.Mvc.xml
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\obj\Debug\NTierProje.UI.csprojResolveAssemblyReference.cache
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\obj\Debug\NTierProje.UI.dll
 C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\obj\Debug\NTierProje.UI.pdb
-C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.dll
-C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.Mvc.dll
-C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.xml
-C:\Users\cn_og\Desktop\Git\NTierProje\NTierProje.UI\bin\PagedList.Mvc.xml

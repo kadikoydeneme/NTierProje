@@ -42,11 +42,11 @@ namespace NTierProje.UI.Attributes
                     break;
                 }
 
-            //Eğer uymuyorsa error sayfasına yönlendirilir.(404 sayfasına) ya da Login sayfasına yönlendirilebilir.
+            //Eğer uymuyorsa Home/index sayfasına yönlendirilir.
             if (!authorized)
             {
                 var url = new UrlHelper(context.RequestContext);
-                var logonUrl = url.Action("Http", "Error", new { Id = 401, Area = "" });
+                var logonUrl = url.Action("Index", "Home", new { Id = 302, Area = "" });
                 context.Result = new RedirectResult(logonUrl);
 
                 return;

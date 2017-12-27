@@ -196,7 +196,6 @@
     <Content Include="Content\Images\blank.gif" />
     <Content Include="Content\Images\cart.jpg" />
     <Content Include="Content\Images\cart.png" />
-    <Content Include="Content\Images\check.png" />
     <Content Include="Content\Images\close_1.png" />
     <Content Include="Content\Images\emptycart.jpg" />
     <Content Include="Content\Images\grabbing.png" />
@@ -336,6 +335,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AppUserController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrdersController.cs" />
@@ -389,6 +389,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Views\Base\" />
     <Folder Include="Areas\Member\Views\Checkout\" />
     <Folder Include="Areas\Member\Views\Shared\" />
     <Folder Include="Models\VM\" />
